@@ -28,7 +28,7 @@ const routes =(req,res)=>{
 
             // Write data to a file
             const outputStream = fs.createWriteStream('output.txt', { flags: 'a' });
-            outputStream.write(`Name: ${parsedData.name}\nMessage: ${parsedData.message}\n\n`);
+            outputStream.write(`Names: ${parsedData.name}\nMessage: ${parsedData.message}\n\n`);
             outputStream.end();
 
             // Redirect user with 302 status
